@@ -1,4 +1,6 @@
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
 }
 
@@ -8,24 +10,17 @@
   }
 } */
 
-
-
-html, body {
-    margin: 0;
-    background-color: #1b1b1b;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-    line-height: 1.75;
-
-  }
+html,
+body {
+  margin: 0;
+  background-color: #1b1b1b;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.75;
+}
 
 main {
-  
-  
   color: white;
-    
-    
-
 }
 
 p {
@@ -38,7 +33,7 @@ p {
   /* display: inline-block; */
 }
 
-.code-example button{
+.code-example button {
   opacity: 0.7;
   /* padding: 0.25rem; */
   position: absolute;
@@ -51,8 +46,6 @@ p {
 }
 
 .code-example .tooltip {
-
-
   visibility: hidden;
   width: 140px;
   background-color: #555;
@@ -67,9 +60,6 @@ p {
   margin: 0;
   opacity: 0;
   transition: opacity 0.3s;
-
-
-
 }
 
 .code-example .tooltip::after {
@@ -88,7 +78,6 @@ p {
   opacity: 1;
 }
 
-
 pre {
   display: block;
   font-family: monospace;
@@ -98,13 +87,13 @@ pre {
   padding: 1rem 2.5rem 1rem 1rem;
   word-wrap: break-word;
   white-space: pre-wrap;
-  
 }
 
-.code-example, code, pre {
+.code-example,
+code,
+pre {
   border-radius: 0.25rem;
   font-size: 1rem;
-
 }
 
 code {
@@ -120,11 +109,24 @@ pre code {
   padding: 0;
 }
 
-.token.boolean, .token.char, .token.constant, .token.deleted, .token.number, .token.string, .token.symbol, .token.tag {
+.token.boolean,
+.token.char,
+.token.constant,
+.token.deleted,
+.token.number,
+.token.string,
+.token.symbol,
+.token.tag {
   color: #00d061;
 }
 
-.token.attr-name, .token.builtin, .token.class-name, .token.function, .token.inserted, .token.property, .token.selector {
+.token.attr-name,
+.token.builtin,
+.token.class-name,
+.token.function,
+.token.inserted,
+.token.property,
+.token.selector {
   color: #ff97a0;
 }
 
@@ -132,11 +134,13 @@ pre code {
   color: #c1cff1;
 }
 
-.token.cdata, .token.comment, .token.doctype, .token.prolog, .token.punctuation {
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog,
+.token.punctuation {
   color: #9e9e9e;
 }
-
-
 
 main a {
   color: white;
@@ -146,8 +150,7 @@ main a:hover {
   color: #8cb4ff;
 }
 
-
-.table-scroll table{
+.table-scroll table {
   border-collapse: collapse;
   width: 100%;
 }
@@ -165,7 +168,6 @@ main a:hover {
 
 .table-scroll tr:nth-child(odd) {
   background-color: #343434;
-
 }
 
 .table-scroll tr:hover {
@@ -176,9 +178,8 @@ main a:hover {
 div.content {
   display: flex;
   flex-direction: column;
-  
-  padding: 1px 16px;
 
+  padding: 1px 16px;
 }
 
 div.content a {
@@ -193,25 +194,24 @@ div.content a:hover {
   font-size: 2.5em;
   margin-bottom: 2rem;
   word-break: break-word;
-
-  
 }
 
-
 .content section header {
- font-size: 2em;
+  font-size: 2em;
 }
 
 .content section h3 {
-font-size: 1.25em;
+  font-size: 1.25em;
 }
 
-.content section header a, .content section h3 a {
+.content section header a,
+.content section h3 a {
   text-decoration: none;
   color: white;
 }
 
-.content section header a:hover, .content section h3 a:hover {
+.content section header a:hover,
+.content section h3 a:hover {
   text-decoration: underline;
 }
 
@@ -230,7 +230,6 @@ font-size: 1.25em;
     padding: 0;
     width: 80%;
     text-align: center;
-    
   }
 
   #navbar header {
@@ -243,7 +242,6 @@ font-size: 1.25em;
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   div.content {
@@ -255,15 +253,21 @@ font-size: 1.25em;
   #navbar {
     margin: 0;
     margin-top: 210px;
+    /* margin-top: 40px; */
     margin-left: 1%;
     padding: 0;
     width: 200px;
     position: fixed;
   }
 
+  @media screen and (max-height: 625px) {
+    #navbar {
+      margin-top: 40px;
+    }
+  }
+
   div.content {
     margin-left: 225px;
-
   }
 
   .aside-navbar ul {
@@ -274,11 +278,7 @@ font-size: 1.25em;
   .aside-navbar a.active {
     border-left: 2px solid #ff6d91;
   }
-
-
 }
-
-
 
 .aside-navbar a {
   display: block;
@@ -286,13 +286,12 @@ font-size: 1.25em;
   padding: 16px;
   text-decoration: none;
 }
- 
+
 .aside-navbar a.active {
   background-color: #ff1f7230;
 
   color: white;
   font-weight: bold;
-
 }
 
 .aside-navbar a:hover:not(.active) {
@@ -300,23 +299,12 @@ font-size: 1.25em;
   color: #8cb4ff;
 }
 
-
 .aside-navbar ul {
-
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-
- 
-
-
 }
-
-
 
 #Summary {
   height: 100vh;
 }
-
-
